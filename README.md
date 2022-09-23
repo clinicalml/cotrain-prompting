@@ -93,7 +93,7 @@ Replacing SPT with T-Few thus maintains (or improves) the performance while bein
 1. Create a dataset reader for your dataset in `src/data/dataset_readers.py` inheriting from `BaseDatasetReader`. Your dataset reader should set `self.templates` with appropriate templates to use with T0. See `HSwagReader` for a good example to follow. **Note**: the code uses `validation` as the name of the test split because, following other work, we report test performance on the public SuperGLUE validation sets. Make sure your test split is called `validation`. The co-training code samples a separate validation set for you already.
 2. Add your reader to the `get_dataset_reader` function in `src/data/dataset_readers.py`
 3. Add a config file in `configs/<your-dataset-name>.json`. `configs/rte.json` is a good one to copy.
-4. Tell BERT how to tokenize your data by setting `task_text_field_map` for your task in `src/data/dataset_modules.py`
+4. Tell BERT how to tokenize your data by adding an entry in `task_text_field_map` (`"task_name": ["<input_column_name>", "<target_column_name>"]`) for your task in `src/data/dataset_module.py`. 
 
 
 ## Co-training BERT and GPT-3
