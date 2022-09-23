@@ -1,0 +1,12 @@
+{
+    "dataset": "gpt-trec",
+    "gpt_num_prompts": 4,
+    "validation_is_test": false,
+    "bert_name": "microsoft/deberta-large",
+    "bert_epochs": 20,
+    "lr": 0.1,
+    "weight_decay": 5e-3,
+    "batch_size": 64,
+    "warmup_ratio": 0,
+    "cotrain_min_pct_per_class": 0.01
+}

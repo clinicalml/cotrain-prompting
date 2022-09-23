@@ -1,0 +1,11 @@
+{
+    "dataset": "rte",
+    "local_path": "/home/hlang/t-few/test_ds",
+    "batch_size": 8,
+    "eval_batch_size": 16,
+    "grad_accum_factor": 1,
+    "few_shot": false,
+    "length_norm": 1,
+    "mc_loss": 1,
+    "unlikely_loss": 1
+}

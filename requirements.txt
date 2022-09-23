@@ -1,0 +1,10 @@
+torch==1.10.1+cu113
+datasets==2.0.0
+transformers==4.15.0
+pytorch-lightning==1.7.2
+torchmetrics==0.9.3
+psutil==5.9.0
+deepspeed==0.5.10
+sentencepiece==0.1.96
+promptsource==0.2.3
+scipy==1.6.3
